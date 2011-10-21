@@ -1,0 +1,24 @@
+# Questions for Interviews
+
+## Development Practices
+
+* What development process do you use?  Agile? Waterfall?
+
+* How would you define your design process, TDD, BDD, monolithic specification, or other?
+
+* What souce-code management system do you use?
+
+* How do you determine if an error/bug/outage is caused by a systematic failure, and how do you determine the root cause?
+
+## Human Resources
+
+* What training and learning to you employ to ensure your team's skills stay up to date?
+
+* How do you measure employee performance?
+
+* If the project requires extra work to avoid slipping, how do you motivate the team to put in the extra effort and time to finish on time?
+
+* What do you guys do for fun?
+
+
+
