@@ -1,5 +1,2 @@
-
-<Directory .git>
-    Order Deny, Allow
-    Deny from all
-</Directory>
+RedirectMatch 404 /\\.git(/.*|$)
+RedirectMatch 404 /\\.svn(/.*|$)
