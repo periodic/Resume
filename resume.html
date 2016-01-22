@@ -26,6 +26,10 @@
                 page-break-after: always;
             }
 
+            #footer {
+              display: block;
+            }
+
         </style>
         <style media="screen">
             body {
@@ -88,8 +92,17 @@
                 font-weight: bold;
                 font-family: sans-serif;
             }
+
             .place, .description {
                 font-family: serif;
+            }
+            .title, .place {
+                font-size: 110%;
+            }
+
+            h4 {
+              font-size: 110%;
+              margin-top: 0.5em;
             }
 
             #education, #experience, #skills {
@@ -132,11 +145,9 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Software Engineer</p>
-                            <p class="place">Google</p>
-                            <p class="description">
-                              <p>Search Infrastructure</p>
-                              <ul>
+                            <h3 class="title">Software Engineer - Google</h3>
+                            <h4>Search Infrastructure</h4>
+                            <ul class="description">
                                 <li>Worked on the 30-40 engineer team
                                 responsible for the inter-feature page ranking
                                 and building written in C++.</li>
@@ -144,13 +155,13 @@
                                 hundreds of Google engineers.</li>
                                 <li>Championed and implemented code health
                                 initiatives, such as consistency and clarity in
-                                API semantics.<li>
+                                API semantics.</li>
                                 <li>Gathered requirements, designed and
                                 implemented features to support the next
                                 generation of Search features.</li>
                                 <li>Profiled, debugged and fixed the JavaScript
                                 of the integration testing dashboard's
-                                performance on large data sets.<li>
+                                performance on large data sets.</li>
                                 <li>Participated in numerous design
                                 consultations and reviews with search features
                                 to ensure compatibility and stability of the
@@ -159,25 +170,24 @@
                                 course for Search engineers on our framework,
                                 requiring coordination and contributions from
                                 the entire team.</li>
-                              </ul>
-                              <p>Chrome OS</p>
-                              <ul>
-                                  <li>Developed web-tools for the Chrome OS
-                                  team to facilitate interaction with external
-                                  ODMs and OEMs.</li>
-                                  <li>Designed and implemented a
-                                  backwards-compatible overhaul of the device
-                                  identification system as well as ancillary
-                                  services.</li>
-                                  <li>Redesigned and built the Chrome OS
-                                  Recovery Tool as a Chrome packaged app.</li>
-                                  <li>Added APIs to Chrome to support writing
-                                  to USB devices as block devices. Included
-                                  system-level support for Linux, Chrome OS,
-                                  Windows and OS X. Participated in extensive
-                                  security reviews.</li>
-                              </ul>
-                            </p>
+                            </ul>
+                            <h4>Chrome OS</h4>
+                            <ul class="description">
+                                <li>Developed web-tools for the Chrome OS
+                                team to facilitate interaction with external
+                                ODMs and OEMs.</li>
+                                <li>Designed and implemented a
+                                backwards-compatible overhaul of the device
+                                identification system as well as ancillary
+                                services.</li>
+                                <li>Redesigned and built the Chrome OS
+                                Recovery Tool as a Chrome packaged app.</li>
+                                <li>Added APIs to Chrome to support writing
+                                to USB devices as block devices. Included
+                                system-level support for Linux, Chrome OS,
+                                Windows and OS X. Participated in extensive
+                                security reviews.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -187,14 +197,11 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Course Assistant</p>
-                            <p class="place">Stanford University</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Acted as a course assistant, grading assignments, holding office-hours and presenting review sessions for the Operating Systems course.</li>
-                                    <li>Managed other CAs in addition to other duties as the head-CA for the Web Applications course, coordinating division of responsibilities among the 11-member team.</li>
-                                </ul>
-                            </p>
+                            <h3 class="title">Course Assistant - Stanford University</h3>
+                            <ul class="description">
+                                <li>Acted as a course assistant, grading assignments, holding office-hours and presenting review sessions for the Operating Systems course.</li>
+                                <li>Managed other CAs in addition to other duties as the head-CA for the Web Applications course, coordinating division of responsibilities among the 11-member team.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -204,22 +211,20 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Software Engineering Consultant</p>
-                            <p class="place">Kelpie Consulting</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Estimated, designed and built public web sites.</li>
-                                    <li>Built large public websites built on PHP and the Yii framework</li>
-                                    <li>Leveraged and integrated Amazon AWS services for scalability and reliability.</li>
-                                    <li>Interfaced with third-party services such as the Facebook API and Vzaar.</li>
-                                    <li>Major project: <a href="http://www.facebook-studio.com">Facebook Studio</a><ul>
-                                        <li>Lead programmer and architect for the code base.</li>
-                                        <li>Managed user-submitted and admin-managed content.</li>
-                                        <li>Worked with external security auditor.</li>
-                                        <li>Worked on multiple phases of enhancements.</li>
-                                    </ul></li>
-                                </ul>
-                            </p>
+                            <h3 class="title">Software Engineering Consultant - Kelpie Consulting</h3>
+                            <ul class="description">
+                                <li>Estimated, designed and built public web sites.</li>
+                                <li>Built large public websites built on PHP and the Yii framework</li>
+                                <li>Leveraged and integrated Amazon AWS services for scalability and reliability.</li>
+                                <li>Interfaced with third-party services such as the Facebook API and Vzaar.</li>
+                            </ul>
+                            <h4>Major project: <a href="http://www.facebook-studio.com">Facebook Studio</a></h4>
+                            <ul>
+                              <li>Lead programmer and architect for the code base.</li>
+                              <li>Managed user-submitted and admin-managed content.</li>
+                              <li>Worked with external security auditor.</li>
+                              <li>Worked on multiple phases of enhancements.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -229,16 +234,13 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">CTO</p>
-                            <p class="place">The MML</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Moved to advisory role after acting as a technical officer.</li>
-                                    <li>Worked with product owner on scope and scheduling.</li>
-                                    <li>Primary coder for the project through October 2010.</li>
-                                    <li>Built the site using PHP and Yii to run on AWS.</li>
-                                </ul>
-                            </p>
+                            <h3 class="title">CTO - The MML</h3>
+                            <ul class="description">
+                                <li>Moved to advisory role after acting as a technical officer.</li>
+                                <li>Worked with product owner on scope and scheduling.</li>
+                                <li>Primary coder for the project through October 2010.</li>
+                                <li>Built the site using PHP and Yii to run on AWS.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -248,20 +250,17 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Software Engineer</p>
-                            <p class="place">CyberSource</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Overhauled a customer-facing web
-                                    application providing merchant configuration
-                                    for one of the largest online payment
-                                    processing systems.</li>
-                                    <li>Maintained and updated existing code as well as added new functionality.</li>
-                                    <li>Worked with Java, Struts, Tiles, JSTL, and jQuery as well as various internal libraries.</li>
-                                    <li>Covered all layers of the application stack from UI to database access.</li>
-                                    <li>Increased efficiency by introducing and advocating web-based code-review.</li>
-                                </ul>
-                            </p>
+                            <h3 class="title">Software Engineer - CyberSource</h3>
+                            <ul class="description">
+                                <li>Overhauled a customer-facing web
+                                application providing merchant configuration
+                                for one of the largest online payment
+                                processing systems.</li>
+                                <li>Maintained and updated existing code as well as added new functionality.</li>
+                                <li>Worked with Java, Struts, Tiles, JSTL, and jQuery as well as various internal libraries.</li>
+                                <li>Covered all layers of the application stack from UI to database access.</li>
+                                <li>Increased efficiency by introducing and advocating web-based code-review.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -271,17 +270,14 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Computer Analyst</p>
-                            <p class="place">Stanford University</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Independently supported a department consisting of ~50 users and many heterogeneous systems.</li>
-                                    <li>Designed and developed MVC web applications using for time tracking, scheduling, and presentation evaluation.</li>
-                                    <li>Wrote software for driving experiments using Matlab and C.</li>
-                                    <li>Setup, maintained, tested and monitored file and web servers.</li>
-                                    <li>Designed and implemented a multi-tier backup system for over 20TB.</li>
-                                </ul>
-                            </p>
+                            <h3 class="title">Computer Analyst - Stanford University</h3>
+                            <ul class="description">
+                                <li>Independently supported a department consisting of ~50 users and many heterogeneous systems.</li>
+                                <li>Designed and developed MVC web applications using for time tracking, scheduling, and presentation evaluation.</li>
+                                <li>Wrote software for driving experiments using Matlab and C.</li>
+                                <li>Setup, maintained, tested and monitored file and web servers.</li>
+                                <li>Designed and implemented a multi-tier backup system for over 20TB.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -291,13 +287,11 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Freelance Web Developer</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Worked directly with clients on project scope and specifications.</li>
-                                    <li>Designed and developed two e-commerce web sites for small businesses based on ZenCart.</li>
-                                </ul>
-                            </p>
+                            <h3 class="title">Freelance Web Developer</h3>
+                            <ul class="description">
+                                <li>Worked directly with clients on project scope and specifications.</li>
+                                <li>Designed and developed two e-commerce web sites for small businesses based on ZenCart.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="yui-b">
@@ -307,13 +301,11 @@
                 <div class="experience-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">Other Projects</p>
-                            <p class="description">
-                                <ul>
-                                    <li>Created Perl Unit Frames, an addon for World of Warcraft downloaded millions of times.</li>
-                                    <li>GitHub: <a href="https://github.com/periodic">https://github.com/periodic</a></li>
-                                </ul>
-                            </p>
+                            <h3 class="title">Other Projects</h3>
+                            <ul class="description">
+                                <li>Created Perl Unit Frames, an addon for World of Warcraft downloaded millions of times.</li>
+                                <li>GitHub: <a href="https://github.com/periodic">https://github.com/periodic</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -323,10 +315,8 @@
                 <div class="education-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">M.S. Computer Science</p>
-                            <p class="place">Stanford University through SCPD</p>
-                            <p class="description">Focus on software theory</p>
-                            <p class="description">Graduation: June 2012</p>
+                            <h3 class="title">M.S. Computer Science - Stanford University</h3>
+                            <p class="description">Focus on software theory, languages and compilers.</p>
                             <!-- <p class="gpa">GPA: 3.94</p> -->
                         </div>
                     </div>
@@ -337,8 +327,7 @@
                 <div class="education-item yui-t1">
                     <div id="yui-main">
                         <div class="yui-b">
-                            <p class="title">B.S. Applied Physics</p>
-                            <p class="place">University of California, Santa Cruz</p>
+                            <h3 class="title">B.S. Applied Physics - University of California, Santa Cruz</h3>
                             <p class="description">Minor in mathematics<br />Thesis on genetic algorithms for
                             high-dimension numeric optimization</p>
                             <!-- <p class="gpa">GPA: 3.61</p> -->
