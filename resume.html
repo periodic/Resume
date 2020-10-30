@@ -2,66 +2,57 @@
 <html>
     <head>
         <title>Andrew Haven - Resume</title>
-        <!-- YUI foundation stylesheets -->
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css"> 
-
+        <link rel="stylesheet" href="normalize.css" />
         <style media="print">
             body {
                 padding-bottom: 0;
+                color: #000;
             }
 
-            #header {
-                margin-top: 1em;
+            .item {
+                page-break-inside: avoid;
             }
-
-            #doc {
-                width: 52em;
-            }
-
-            .yui-t1 {
-                width: 52em;
-            }
-
-            .experience-item:nth-child(5) {
-                page-break-after: always;
-            }
-
-            #footer {
-              display: block;
-            }
-
         </style>
         <style media="screen">
             body {
-                padding-bottom: 10em;
-            }
-
-            #header {
-                margin-top: 5em;
+                padding-top: 64px;
+                padding-bottom: 64px;
             }
         </style>
         <style>
             body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #1d1e21;
+            }
+
+            main {
                 font-size: 13px;
+                max-width: 960px;
             }
 
-            #footer {
-                padding-top: 3em;
-                margin-bottom: 5em;
-                color: #999;
+            footer {
+                padding-top: 32px;
+                color: #4e5458;
                 font-size: 80%;
-                clear: both;
                 text-align: center;
-                display: none;
             }
 
-            a, a:visited, a:hover {
-                color: #666;
+            a, a:visited {
+                color: #2B4970;
+            }
+
+            a:hover, a:active {
+                color: #0451B4;
+            }
+
+            h1, h2, h4 {
+                color: #4e5458;
             }
 
             h1, h2 {
-                font-family: "Consolas", monospace;
-                color: #666;
+                font-family: "Consolas", "Inconsolata", monospace;
             }
 
             h1 {
@@ -73,342 +64,338 @@
                 letter-spacing: 0.2em;
             }
 
-            ul li {
-                list-style: inside;
-                padding-left: 1em;
-                text-indent: -1em;
+            h4 {
+              font-size: 105%;
+              margin-bottom: 4px;
+              margin-top: 0;
             }
 
-            h2.section {
-                border-bottom: 1px solid #999;
-                margin-top: 1em;
+
+            header {
+                margin-bottom: 32px;
             }
 
-            div.section {
-                margin-top: 2em;
+            .header-text {
+                margin-bottom: 4px;
+            }
+
+            .byline {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            
+            .section-header {
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 0;
+            }
+
+            .item {
+                display: flex;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+            }
+
+            .summary {
+                width: 25%;
+                flex-shrink: 0;
+                flex-grow: 0;
+                margin-right: 16px;
+            }
+
+            .title, .company {
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 0.5em;
+                color: #4e5458;
+            }
+            
+            .time {
+                color: #4e5458;
             }
 
             .title {
-                font-weight: bold;
-                font-family: sans-serif;
+                font-size: 120%;
             }
 
-            .place, .description {
-                font-family: serif;
-            }
-            .title, .place {
+            .company {
                 font-size: 110%;
             }
 
-            h4 {
-              font-size: 110%;
-              margin-top: 0.5em;
+            .time {
+                margin: 0;
+            }
+            
+            .details p {
+                margin-top: 0;
             }
 
-            #education, #experience, #skills {
-                clear: both;
+            .details ul {
+                list-style: none;
+                padding-left: 16px;
+                margin-top: 0;
+                line-height: 1.2;
             }
 
-            .education-item, .experience-item, .skills-item, .clear {
-                clear: both;
+            .details ul li::before {
+                content: "•";
+                margin-right: 4px;
+                margin-left: -8px;
             }
 
-            .education-item .yui-b, 
-            .experience-item .yui-b, 
-            .skills-item .yui-b {
-                margin-top: 0.5em;
-                margin-bottom: 0.5em;
-            }
-
-            p.description {
-                margin-top: 0.5em;
-            }
-
-            li {
-                font-family: serif;
-                margin-bottom: 0.3em;
-            }
-
-            #yui-main p {
-                font-family: serif;
-            }
         </style>
     </head>
     <body>
-        <div id="doc">
-            <div id="header">
-                <h1><span id="header-text">Andrew Haven</span></h1>
-                <p>drew.haven@gmail.com // 408-982-7517</p>
-            </div>
-            <div id="experience" class="section">
-                <h2 class="section">EXPERIENCE</h2>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Technical Lead for Integrations - Asana</h3>
-                            <ul class="description">
-                                <li>Designed and maintained the technical stack for our integrations infrastructure.</li>
-                                <li>Provided technical leadership and mentorship for the team of five engineers.</li>
-                                <li>Solicited and integrated feedback from other product areas in integrations design.</li>
-                                <li>Worked directly with business, marketting, support, engineering, security and operations from product specification through launch.</li>
-                                <li>Contributed optimizations and design to our build system and Scala libraries.</li>
-                                <li>Designed, implemented and launched integrations for:
-                                    <ul>
-                                        <li>Microsoft Teams</li>
-                                        <li>Slack</li>
-                                        <li>Wufoo Forms</li>
-                                        <li>GMail</li>
-                                        <li>Spreadsheet import</li>
-                                        <li>SQL databases</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="yui-b">
+        <main>
+            <header>
+                <h1 class="header-text">Andrew Haven</h1>
+                <p class="byline">drew.haven@gmail.com // 408-982-7517</p>
+            </header>
+            <section id="experience">
+                <h2 class="section-header">EXPERIENCE</h2>
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Engineering Lead</p>
+                        <p class="company">Asana</p>
                         <p class="time">May 2016 - Present</p>
                     </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Designed and architected our in-product app platform.</li>
+                            <li>Lead design, implementation and launch of integrations, including:
+                                Slack, GMail, Microsoft Teams, Microsoft Outlook, Microsoft OneDrive, Spreadsheet importer, Jira, Wufoo Forms.
+                            </li>
+                            <li>Lead design, implementation and launch of the Asana Forms feature.</li>
+                            <li>Designed and maintained the technical stack for our integrations infrastructure.</li>
+                            <li>Provided technical leadership and mentorship for the teams.</li>
+                            <li>Worked directly with business, marketting, customer support, engineering, security and operations from product specification through launch.</li>
+                            <li>Contributed optimizations and design to our tooling and infrastructure.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Software Engineer - Google</h3>
-                            <h4>Search Infrastructure</h4>
-                            <ul class="description">
-                                <li></li>
-                                <li>Maintained and improved a framework used by
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Software Engineer</p>
+                        <p class="company">Google</p>
+                        <p class="time">July 2012 - May 2016</p>
+                    </div>
+                    <div class="details">
+                        <h4>Search Infrastructure</h4>
+                        <ul class="description">
+                            <li>Maintained and improved a framework used by
                                 hundreds of Google engineers.</li>
-                                <li>Championed and implemented code health
+                            <li>Championed and implemented code health
                                 initiatives, such as consistency and clarity in
                                 API semantics.</li>
-                                <li>Gathered requirements, designed and
+                            <li>Gathered requirements, designed and
                                 implemented features to support the next
                                 generation of Search features.</li>
-                                <li>Profiled, debugged and fixed the JavaScript
+                            <li>Profiled, debugged and fixed the JavaScript
                                 of the integration testing dashboard's
                                 performance on large data sets.</li>
-                                <li>Participated in numerous design
+                            <li>Participated in numerous design
                                 consultations and reviews with search features
                                 to ensure compatibility and stability of the
                                 system.</li>
-                                <li>Designed and ran a quarterly training
+                            <li>Designed and ran a quarterly training
                                 course for Search engineers on our framework,
                                 requiring coordination and contributions from
                                 the entire team.</li>
-                            </ul>
-                            <h4>Chrome OS</h4>
-                            <ul class="description">
-                                <li>Developed web-tools for the Chrome OS
+                        </ul>
+                        <h4>Chrome OS</h4>
+                        <ul class="description">
+                            <li>Developed web-tools for the Chrome OS
                                 team to facilitate interaction with external
                                 ODMs and OEMs.</li>
-                                <li>Designed and implemented a
+                            <li>Designed and implemented a
                                 backwards-compatible overhaul of the device
                                 identification system as well as ancillary
                                 services.</li>
-                                <li>Redesigned and built the Chrome OS
+                            <li>Redesigned and built the Chrome OS
                                 Recovery Tool as a Chrome packaged app.</li>
-                                <li>Added APIs to Chrome to support writing
+                            <li>Added APIs to Chrome to support writing
                                 to USB devices as block devices. Included
                                 system-level support for Linux, Chrome OS,
                                 Windows and OS X. Participated in extensive
                                 security reviews.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="yui-b">
-                        <p class="time">July 2012 - May 2016</p>
+                        </ul>
                     </div>
                 </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Course Assistant - Stanford University</h3>
-                            <ul class="description">
-                                <li>Acted as a course assistant, grading assignments, holding office-hours and presenting review sessions for the Operating Systems course.</li>
-                                <li>Managed other CAs in addition to other duties as the head-CA for the Web Applications course, coordinating division of responsibilities among the 11-member team.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="yui-b">
-                        <p class="time">January 2012 - June 2012</p>
-                    </div>
-                </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Software Engineering Consultant - Kelpie Consulting</h3>
-                            <ul class="description">
-                                <li>Estimated, designed and built public web sites.</li>
-                                <li>Built large public websites built on PHP and the Yii framework</li>
-                                <li>Leveraged and integrated Amazon AWS services for scalability and reliability.</li>
-                                <li>Interfaced with third-party services such as the Facebook API and Vzaar.</li>
-                            </ul>
-                            <h4>Major project: <a href="http://www.facebook-studio.com">Facebook Studio</a></h4>
-                            <ul>
-                              <li>Lead programmer and architect for the code base.</li>
-                              <li>Managed user-submitted and admin-managed content.</li>
-                              <li>Worked with external security auditor.</li>
-                              <li>Worked on multiple phases of enhancements.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="yui-b">
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Software Engineer</p>
+                        <p class="company">Kelpie Consulting</p>
                         <p class="time">Februrary 2011 - December 2011</p>
                     </div>
-                </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">CTO - The MML</h3>
-                            <ul class="description">
-                                <li>Moved to advisory role after acting as a technical officer.</li>
-                                <li>Worked with product owner on scope and scheduling.</li>
-                                <li>Primary coder for the project through October 2010.</li>
-                                <li>Built the site using PHP and Yii to run on AWS.</li>
-                            </ul>
-                        </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Estimated, designed and built public web sites.</li>
+                            <li>Built large public websites built on PHP and the Yii framework</li>
+                            <li>Leveraged and integrated Amazon AWS services for scalability and reliability.</li>
+                            <li>Interfaced with third-party services such as the Facebook API and Vzaar.</li>
+                        </ul>
+                        <h4><a href="http://www.facebook-studio.com">Facebook Studio</a></h4>
+                        <ul>
+                            <li>Lead programmer and architect for the code base.</li>
+                            <li>Managed user-submitted and admin-managed content.</li>
+                            <li>Worked with external security auditor.</li>
+                            <li>Worked on multiple phases of enhancements.</li>
+                        </ul>
                     </div>
-                    <div class="yui-b">
+                </div>
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">CTO</p>
+                        <p class="company">The MML</p>
                         <p class="time">May 2011 - December 2011</p>
                     </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Worked with product owner on scope and scheduling.</li>
+                            <li>Primary coder for the project through October 2010.</li>
+                            <li>Built the site using PHP and Yii to run on AWS.</li>
+                            <li>Moved to advisory role after acting as a technical officer.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Software Engineer - CyberSource</h3>
-                            <ul class="description">
-                                <li>Overhauled a customer-facing web
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Software Engineer</p>
+                        <p class="company">CyberSource</p>
+                        <p class="time">July 2010 - February 2011</p>
+                    </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Overhauled a customer-facing web
                                 application providing merchant configuration
                                 for one of the largest online payment
                                 processing systems.</li>
-                                <li>Maintained and updated existing code as well as added new functionality.</li>
-                                <li>Worked with Java, Struts, Tiles, JSTL, and jQuery as well as various internal libraries.</li>
-                                <li>Covered all layers of the application stack from UI to database access.</li>
-                                <li>Increased efficiency by introducing and advocating web-based code-review.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="yui-b">
-                        <p class="time">July 2010 - February 2011</p>
+                            <li>Maintained and updated existing code as well as added new functionality.</li>
+                            <li>Worked with Java, Struts, Tiles, JSTL, and jQuery as well as various internal libraries.</li>
+                            <li>Covered all layers of the application stack from UI to database access.</li>
+                            <li>Increased efficiency by introducing and advocating web-based code-review.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Computer Analyst - Stanford University</h3>
-                            <ul class="description">
-                                <li>Independently supported a department consisting of ~50 users and many heterogeneous systems.</li>
-                                <li>Designed and developed MVC web applications using for time tracking, scheduling, and presentation evaluation.</li>
-                                <li>Wrote software for driving experiments using Matlab and C.</li>
-                                <li>Setup, maintained, tested and monitored file and web servers.</li>
-                                <li>Designed and implemented a multi-tier backup system for over 20TB.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="yui-b">
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Systems Analyst</p>
+                        <p class="company">Stanford University</p>
                         <p class="time">May 2006 - July 2010</p>
                     </div>
-                </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Freelance Web Developer</h3>
-                            <ul class="description">
-                                <li>Worked directly with clients on project scope and specifications.</li>
-                                <li>Designed and developed two e-commerce web sites for small businesses based on ZenCart.</li>
-                            </ul>
-                        </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Independently supported a department consisting of ~50 users and many heterogeneous systems.</li>
+                            <li>Designed and developed MVC web applications using for time tracking, scheduling, and presentation evaluation.</li>
+                            <li>Wrote software for driving experiments using Matlab and C.</li>
+                            <li>Setup, maintained, tested and monitored file and web servers.</li>
+                            <li>Designed and implemented a multi-tier backup system for over 20TB.</li>
+                        </ul>
                     </div>
-                    <div class="yui-b">
+                </div>
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Web Developer</p>
+                        <p class="company">Freelance</p>
                         <p class="time">August 2005 - May 2006</p>
                     </div>
-                </div>
-                <div class="experience-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">Other Projects</h3>
-                            <ul class="description">
-                                <li>Created Perl Unit Frames, an addon for World of Warcraft downloaded millions of times.</li>
-                                <li>GitHub: <a href="https://github.com/periodic">https://github.com/periodic</a></li>
-                            </ul>
-                        </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Worked directly with clients on project scope and specifications.</li>
+                            <li>Designed and developed two e-commerce web sites for small businesses based on ZenCart.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div id="education" class="section">
-                <h2 class="section">EDUCATION</h2>
-                <div class="education-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">M.S. Computer Science - Stanford University</h3>
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Course Assistant</p>
+                        <p class="company">Stanford University</p>
+                        <p class="time">January 2012 - June 2012</p>
+                    </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Acted as a course assistant, grading assignments, holding office-hours and presenting review sessions for the Operating Systems course.</li>
+                            <li>Managed other CAs in addition to other duties as the head-CA for the Web Applications course, coordinating division of responsibilities among the 11-member team.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="summary">
+                        <p class="title">Other Projects</p>
+                    </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Created Perl Unit Frames, an addon for World of Warcraft downloaded millions of times.</li>
+                            <li>GitHub: <a href="https://github.com/periodic">https://github.com/periodic</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+                <section id="education">
+                    <h2 class="section-header">EDUCATION</h2>
+                    <div class="item">
+                        <div class="summary">
+                            <p class="title">M.S. Computer Science</p>
+                            <p class="company">Stanford University</p>
+                            <p class="time">2008-2012</p>
+                        </div>
+                        <div class="details">
                             <p class="description">Focus on software theory, languages and compilers.</p>
                             <!-- <p class="gpa">GPA: 3.94</p> -->
                         </div>
                     </div>
-                    <div class="yui-b">
-                        <p class="time">2008-2012</p>
-                    </div>
-                </div>
-                <div class="education-item yui-t1">
-                    <div id="yui-main">
-                        <div class="yui-b">
-                            <h3 class="title">B.S. Applied Physics - University of California, Santa Cruz</h3>
-                            <p class="description">Minor in mathematics<br />Thesis on genetic algorithms for
-                            high-dimension numeric optimization</p>
+                    <div class="item">
+                        <div class="summary">
+                            <p class="title">B.S. Applied Physics</p>
+                            <p class="company">University of California, Santa Cruz</p>
+                            <p class="time">2001-2005</p>
+                        </div>
+                        <div class="details">
+                            <p class="description">Minor in mathematics<br />Thesis on genetic algorithms for high-dimension numeric optimization</p>
                             <!-- <p class="gpa">GPA: 3.61</p> -->
                         </div>
                     </div>
-                    <div class="yui-b">
-                        <p class="time">2001-2005</p>
-                    </div>
-                </div>
-            </div>
-            <div id="skills" class="section">
-                <h2 class="section">SKILLS</h2>
-                <div class="skills-item yui-t1">
-                    <div class="yui-b">
-                        <p class="time">Development</p>
-                    </div>
-                    <div id="yui-main">
-                        <div class="yui-b">
+                </section>
+                <section id="skills">
+                    <h2 class="section-header">SKILLS</h2>
+                    <div class="item ">
+                        <div class="summary">
+                            <p class="title">Development</p>
+                        </div>
+                        <div class="details">
                             <p>
-                                C, Git, Haskell, Java, Javascript, PHP, Perl, Ruby, SQL, SVN
+                            C, Git, Haskell, Java, Scala, Elm, Javascript, TypeScript, React
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="skills-item yui-t1">
-                    <div class="yui-b">
-                        <p class="time">Web</p>
-                    </div>
-                    <div id="yui-main">
-                        <div class="yui-b">
+                    <div class="item">
+                        <div class="summary">
+                            <p class="title">Web</p>
+                        </div>
+                        <div class="details">
                             <p>
-                                Apache, CSS, HTML, J2EE, jQuery, Mongrel, MySQL, Ruby on Rails, Yii
+                            Apache, CSS, HTML, SQL, Ruby on Rails
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="skills-item yui-t1">
-                    <div class="yui-b">
-                        <p class="time">Systems Administration</p>
-                    </div>
-                    <div id="yui-main">
-                        <div class="yui-b">
+                    <div class="item">
+                        <div class="summary">
+                            <p class="title">Systems Administration</p>
+                        </div>
+                        <div class="details">
                             <p>
                                 Operating Systems: Linux, Solaris, Windows
                             </p>
                             <p>
-                                Services: DNS, HTTP, IPTables/PF, NIS, NFS, NAT, Email, Samba, TCP/IP, ZFS
+                                Services: Kubernetes, Docker, AWS, DNS, HTTP
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
+                <footer>
+                    <p>This resume is available online at <a
+                                                              href="https://periodic.github.io/Resume/">http://periodic.github.io/Resume/</a></p>
+                </footer>
             </div>
-            <div id="footer">
-                <p>This resume is available online at <a
-                    href="http://havenisms.com/resume/">http://havenisms.com/resume/</a></p>
-            </div>
-        </div>
     </body>
 </html>
