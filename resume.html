@@ -137,10 +137,14 @@
                 line-height: 1.2;
             }
 
+            .details ul li {
+                margin-bottom: 4px;
+            }
+
             .details ul li::before {
                 content: "•";
                 margin-right: 4px;
-                margin-left: -8px;
+                margin-left: -12px;
             }
 
         </style>
@@ -155,23 +159,41 @@
                 <h2 class="section-header">EXPERIENCE</h2>
                 <div class="item">
                     <div class="summary">
-                        <p class="title">Staff Software Engineer<br/>Interim Engineering Manager</p>
+                        <p class="title">Senior Software Engineer</p>
+                        <p class="company">Fossa</p>
+                        <p class="time">February 2022 - April 2024</p>
+                    </div>
+                    <div class="details">
+                        <ul class="description">
+                            <li>Built a service for cloud-based analysis of code to identify software components leveraging our team's existing CLI tool.</li>
+                            <li>Migrated the application architecture from the ReaderT IO pattern to Fused Effects.</li>
+                            <li>Researched, designed and build a feature for the support team to non-destructively correct inaccuracies in our licensing data.</li>
+                            <li>Researched, designed and built historical statistic tracking of user data and accompanying dashboards in the product.</li>
+                            <li>Added numerious small features the application such as improved interfacing with third party APIs, nested list grouping, and lazy loading of large lists of data.</li>
+                            <li>Lead a collaborative project to inventory the team's codebase and recommend investments to make in existing code to reduce risk and improve developer velocity, then scheduled some of those projects.</li>
+                            <li>Authored guidelines for testing, monitoring and alerting and launched an initiative to incrementally move systems towards them.</li>
+                        </ul>
+                    </div>
+                </div><div class="item">
+                    <div class="summary">
+                        <p class="title">Engineering Manager</p>
                         <p class="company">Canvas</p>
-                        <p class="time">February 2021 - Present</p>
+                        <p class="time">February 2021 - January 2022</p>
                     </div>
                     <div class="details">
                         <ul class="description">
                             <li>Managed two fully-remote full-stack engineering teams.</li>
-                            <li>Managed and lead an overhaul of the company's ATS integrations.</li>
-                            <li>Managed and lead migration of infrastructure to auto-scaling container-based deployments.</li>
+                            <li>Managed and lead an overhaul of the company's ATS integrations to improve quality and velocity by reducing code duplication and building clear abstractions.</li>
+                            <li>Managed and lead migration of infrastructure to auto-scaling container-based deployments built on AWS ECS and Fargate from static instances.</li>
+                            <li>Gathered, summarized and reported technical evidence for investor due-dilligence and SOC2 audits.</li>
                             <li>Organized the team's agile practices and rituals.</li>
-                            <li>Initiated and lead engineering stability and quality initiatives.</li>
+                            <li>Initiated and lead engineering stability and quality initiatives, such as auditing test coverage and monitors and processes for triaging user reports.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="item">
                     <div class="summary">
-                        <p class="title">Engineering Lead</p>
+                        <p class="title">Engineering Team-Lead</p>
                         <p class="company">Asana</p>
                         <p class="time">May 2016 - December 2020</p>
                     </div>
